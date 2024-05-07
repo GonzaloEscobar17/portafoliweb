@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"
+      integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- LINK FAVICON -->
+    <link rel="icon" type="images/png" href="./img/favicon.png" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Porfolio</title>
+  </head>
+  <body>
+    <!-- Sección Inicio -->
+    <span class="sombra">
+      <section id="inicio" class="inicio">
+        <div class="contenido">
+          <header>
+            <div class="logo">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h1>Portafolio Web</h1>
+            </div>
+            <nav id="nav" class="">
+              <a href="./index.html">Inicio</a>
+              <a href="#servicios">Servicios</a>
+              <a href="#habilidades">Habilidades</a>
+              <a href="#trabajos">Trabajos</a>
+              <a href="#contacto">Contacto</a>
+            </nav>
+
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Iconos -->
+
+            <div class="plataformas">
+              <a><i class="fa-brands fa-js"></i></a>
+              <a><i class="fa-brands fa-python"></i></a>
+              <a><i class="fa-solid fa-database"></i></a>
+              <a><i class="fa-brands fa-github"></i></a>
+            </div>
+          </header>
+
+          <div class="fila">
+            <div class="col">
+              <h2>Desarrollador Full Stack</h2>
+              <p>
+                Hola,soy Gonzalo Franch Escobar, un desarrollador Full Stack
+                Junior con experiencia en tecnologías web modernas. Me
+                especializo en el desarrollo tanto del lado del cliente como del
+                servidor, con habilidades sólidas en HTML, CSS, JavaScript,
+                React.js, Node.js y Express.js.
+              </p>
+              <button class="btn btn-1" onclick="descargarPDF()">
+                Descargar CV
+              </button>
+            </div>
+            <div class="col">
+              <div class="contenedor-img">
+                <img src="img/foto-inicio.png" alt="Imagen Principal" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </span>
+
+    <!-- sección Servicios -->
+    <section id="servicios" class="servicios">
+      <div class="fila">
+        <div class="col">
+          <div class="card">
+            <div class="icono color1">
+              <div class="circulo">
+                <i class="fa-solid fa-file-code"></i>
+              </div>
+            </div>
+            <h3>Desarollo Web: Front-End</h3>
+            <p>
+              Diseño y maquetación de paginas web estaticas o dinamicas usando
+              herramientas como Html, Css, JavScript. Tambien usando framework y
+              bibliotecas como React, Angular.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="icono color2">
+              <div class="circulo">
+                <i class="fa-solid fa-database"></i>
+              </div>
+            </div>
+            <h3>Bases De Datos</h3>
+            <p>
+              Apasionado analista de datos con experiencia en el manejo de bases
+              de datos MySQL y la creación de consultas SQL para extraer
+              información valiosa. Me especializo en el diseño e implementación
+              de consultas eficientes para analizar grandes conjuntos de datos y
+              generar insights significativos.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="icono color3">
+              <div class="circulo">
+                <i class="fa-solid fa-code"></i>
+              </div>
+            </div>
+            <h3>Desarollo Web: Back-End</h3>
+            <p>
+              Apasionado con experiencia en la construcción de la parte back end
+              de aplicaciones web. Mi enfoque principal es utilizar tecnologías
+              como Node.js y Express.js para crear sistemas robustos y
+              escalables que manejen datos de manera eficiente y proporcionen
+              una experiencia fluida para el usuario. Proximamente aprendiendo
+              el framework Django.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sección habilidades -->
+    <section class="habilidades" id="habilidades">
+      <div class="contenedor-habi">
+        <h2>Habilidades</h2>
+        <div class="fila">
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="100">100%</div>
+                <h2>HTML & CSS</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="90">90%</div>
+                <h2>PYTHON</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="90">90%</div>
+                <h2>JAVASCRIPT</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fila">
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="100">100%</div>
+                <h2>MYSQL</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="82">82%</div>
+                <h2>REACT</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="10">10%</div>
+                <h2>DJANGO</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sección trabajos -->
+    <section class="trabajos" id="trabajos">
+      <h2>Mis Trabajos</h2>
+
+      <nav>
+        <a
+          href="javascript:void(0)"
+          class="borde"
+          id="item"
+          onclick="verCategoria('item')"
+          >Todos</a
+        >
+        <a
+          href="javascript:void(0)"
+          class=""
+          id="disenio"
+          onclick="verCategoria('disenio')"
+          >Desarollo Web</a
+        >
+        <a
+          href="javascript:void(0)"
+          class=""
+          id="programacion"
+          onclick="verCategoria('programacion')"
+          >Aplicaciones</a
+        >
+      </nav>
+
+      <div class="galeria">
+        <div class="item disenio">
+          <img src="img/Bootcamp.png" alt="BootcampHaking" />
+          <div class="info">
+            <h3>Bootcamp Curso Ciberseguridad</h3>
+            <span><i class="fa-brands fa-html5"></i> HTML</span
+            ><span><i class="fa-brands fa-css3"></i> CSS</span>
+            <a
+              href="https://github.com/GonzaloEscobar17/BootscampCiberseguridad"
+              target="_blank"
+              >Ver Trabajo</a
+            >
+          </div>
+        </div>
+        <div class="item programacion">
+          <img src="./img/Juego.png" alt="" />
+          <div class="info">
+            <h3>Juego Death Road</h3>
+            <span><i class="fa-brands fa-python"></i> PYTHON</span>
+            <a
+              href="https://github.com/GonzaloEscobar17/DeathRoad"
+              target="_blank"
+              >Ver Trabajo</a
+            >
+          </div>
+        </div>
+        <div class="item disenio">
+          <img src="./img/TiendaOnline.png" alt="" />
+          <div class="info">
+            <h3>Tienda Online</h3>
+            <span><i class="fa-brands fa-html5"></i> HTML</span
+            ><span><i class="fa-brands fa-css3"></i> CSS</span
+            ><span><i class="fa-brands fa-js"></i>JavaScript</span>
+            <a
+              href="https://github.com/GonzaloEscobar17/TiendaOnly"
+              target="_blank"
+              >Ver Trabajo</a
+            >
+          </div>
+        </div>
+        <div class="item programacion">
+          <img src="./img/JuegoAhorcado.png" alt="" />
+          <div class="info">
+            <h3>Juego Ahorcado</h3>
+            <span><i class="fa-brands fa-python"></i> PYTHON</span>
+            <a
+              href="https://github.com/GonzaloEscobar17/JuegoAhorcado"
+              target="_blank"
+              >Ver Trabajo</a
+            >
+          </div>
+        </div>
+        <div class="item disenio">
+          <img src="./img/formulario.png" alt="" />
+          <div class="info">
+            <h3>Formulario con React</h3>
+            <span><i class="fa-brands fa-html5"></i> HTML</span
+            ><span><i class="fa-brands fa-css3"></i> CSS</span>
+            <span><i class="fa-brands fa-react"></i> REACT</span>
+            <a
+              href="https://github.com/GonzaloEscobar17/formulario"
+              target="_blank"
+              >Ver Trabajo</a
+            >
+          </div>
+        </div>
+        <div class="item programacion">
+          <img src="./img/CalculadoraPython.png" alt="" />
+          <div class="info">
+            <h3>Calculadora Python</h3>
+            <span><i class="fa-brands fa-python"></i> PYTHON</span>
+            <a
+              href="https://github.com/GonzaloEscobar17/CalculadoraPython"
+              target="_blank"
+              >Ver Trabajo</a
+            >
+          </div>
+        </div>
+        <div class="item programacion">
+          <img src="./img/Contador.png" alt="" />
+          <div class="info">
+            <h3>Contador React</h3>
+            <span><i class="fa-brands fa-html5"></i> HTML</span
+            ><span><i class="fa-brands fa-css3"></i> CSS</span>
+            <span><i class="fa-brands fa-react"></i> REACT</span>
+            <a
+              href="https://github.com/GonzaloEscobar17/Contador"
+              target="_blank"
+              >VER</a
+            >
+          </div>
+        </div>
+        <div class="item programacion">
+          <img src="./img/Coquette.png" alt="" />
+          <div class="info">
+            <h3>Programa de citas</h3>
+            <span><i class="fa-brands fa-html5"></i> HTML</span
+            ><span><i class="fa-brands fa-css3"></i> CSS</span
+            ><span><i class="fa-brands fa-js"></i>JavaScript</span>
+            <a
+              href="https://github.com/GonzaloEscobar17/ConsigueCita"
+              target="_blank"
+              >Ver Trabajo</a
+            >
+          </div>
+        </div>
+        <div class="item disenio">
+          <img src="./img/Horen.png" alt="" />
+          <div class="info">
+            <h3>Pagina Horen</h3>
+            <span><i class="fa-brands fa-html5"></i> HTML</span
+            ><span><i class="fa-brands fa-css3"></i> CSS</span>
+            <span><i class="fa-brands fa-react"></i> REACT</span
+            ><span><i class="fa-brands fa-node"></i> NODE JS</span>
+            <span><i class="fa-solid fa-database"></i>MONGO DB</span>
+            <a>En construcción 🥹</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sección contacto -->
+    <section class="contacto" id="contacto">
+      <div class="contenedor-contacto">
+        <h2>Contacto</h2>
+        <div class="fila">
+          <div class="col">
+            <div class="info">
+              <h3>Email:</h3>
+              <p>gononzalooescobar09@gmail</p>
+            </div>
+            <div class="info">
+              <h3>Teléfono:</h3>
+              <p>+57 3058002508</p>
+            </div>
+            <div class="info">
+              <h3>País</h3>
+              <p>Colombia</p>
+            </div>
+            <div class="info">
+              <h3>Ciudad:</h3>
+              <p>Bogotá</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Autor: Gonzalo Franch Escobar Copyright © 2024</p>
+      <p></p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
