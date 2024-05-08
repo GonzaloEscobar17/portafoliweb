@@ -61,7 +61,7 @@ function cargarAnimaciones() {
 function descargarPDF() {
   // Crea un enlace temporal
   var link = document.createElement("a");
-  link.href = "./archivo/HojaVidaGonzaloFranch.pdf"; // Especifica la ruta al archivo PDF
+  link.href = "./archivo/HojaVidaGonzaloFranchEscobar.pdf"; // Especifica la ruta al archivo PDF
   link.download = "HojaVida.pdf"; // Establece el nombre del archivo que se descargará
   // Simula un clic en el enlace para iniciar la descarga
   document.body.appendChild(link);
