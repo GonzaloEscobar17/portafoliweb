@@ -1,10 +1,10 @@
 /* importamos la fuente */
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "M PLUS Rounded 1c";
+  font-family: "Roboto, sans-serif";
 }
 html {
   scroll-behavior: smooth;
@@ -74,11 +74,11 @@ body {
   width: 50%;
 }
 .inicio .fila .col h2 {
-  margin-bottom: 15px;
-  font-size: 20px; /* Espeanzas */
+  margin-bottom: 5px;
+  font-size: 20px;
 }
 .inicio .fila .col p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .inicio .fila .col .contenedor-img {
@@ -233,13 +233,11 @@ body {
   text-align: center;
 }
 
-/* Esta clase se genera dinámicamente por la librera para graficos */
 .score .box canvas {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* SECCION T R A B A J O S */
 .trabajos {
   max-width: 1100px;
   margin: auto;
@@ -266,7 +264,6 @@ body {
 .trabajos nav a:hover {
   border: 3px solid #ff5b00;
 }
-/* Esta clase se agregrá dinámicamente cuando haya seleccionada una opción */
 .borde {
   border: 3px solid #ff5b00 !important;
 }
